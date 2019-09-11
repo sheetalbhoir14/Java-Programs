@@ -6,7 +6,7 @@ public class AddTwoMatrix {
 	int arr1[][] = { { 1, 2, 3 }, { 3, 5, 6 }, { 6, 1, 2 } };
 	int arr2[][] = { { 1, 2, 3 }, { 3, 5, 6 }, { 6, 1, 2 } };
 	int add[][]=new int[3][3];
-	
+	System.out.println("Sum of elements : ");
 	for(int i=0;i<3;i++)
 		
 	{

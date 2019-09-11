@@ -25,7 +25,7 @@ public class BubbleSort {
 		 System.out.println("After Sorting element: ");
 		 for(int i=0;i<=arr.length-1;i++)
 		 {
-			 System.out.println(" "+arr[i]);
+			 System.out.print(arr[i]+" ");
 		 }
 		
 	}

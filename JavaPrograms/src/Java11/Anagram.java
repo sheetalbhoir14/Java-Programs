@@ -9,7 +9,7 @@ public class Anagram {
 		String str2 = "earth";
 		boolean status = true;
 		if (str1.length() != str2.length()) {
-			System.out.println("Strings are not anagram");
+		status=false;
 		} else {
 			char[] arrstr1 = str1.toCharArray();
 			char[] arrstr2 = str2.toCharArray();
@@ -20,7 +20,8 @@ public class Anagram {
 		if (status == true) {
 			System.out.println("Strings are anagram");
 		} else {
-
+			
+			System.out.println("Strings are not anagram");
 		}
 
 	}

@@ -5,13 +5,13 @@ import java.util.Scanner;
 
 public class BinarySearch {
 	
-	 public static int binarySearch(int arr[], int first, int last, int key){  
-	        if (last>=first){  
+	 public static int binarySearch(String arr[], int first, int last, String key){  
+	        while(last>=first){  
 	            int mid = first + (last - first)/2;  
 	            if (arr[mid] == key){  
 	            return mid;  
 	            }  
-	            if (arr[mid] > key){  
+	            if (arr[mid].compareTo(key)<0){  
 	            return binarySearch(arr, first, mid-1, key);//search in left subarray  
 	            }else{  
 	            return binarySearch(arr, mid+1, last, key);//search in right subarray  
@@ -21,8 +21,8 @@ public class BinarySearch {
 	    }  
 	
 public static void main(String[] args) {
-		int arr[]= {2,6,8,1,7,9};
-		int key=2;
+		String  arr[]= {"sheetal","bag","net","hit"};
+		String  key="net";
 	Arrays.sort(arr);
 		int last=arr.length-1;
 		int result= binarySearch(arr,0,last,key);

@@ -9,6 +9,16 @@ public class WhiteSpace {
 		Scanner sc=new Scanner (System.in);
 		System.out.println("Enter the String: ");
 		str=sc.nextLine();
+		String [] st=str.split(" ");
+		
+		for(int i=0;i<st.length;i++)
+		{
+			System.out.print(st[i]);
+		}
+		
+		System.out.println();
+		
+		
 		char [] str1=str.toCharArray();
 		for(int i=0;i<str1.length;i++)
 		{

@@ -13,7 +13,7 @@ public class Triplets {
 					if(arr[i]+arr[j]+arr[k]==15)
 					{
 						count++;
-						System.out.print("Triplets of sume is 15: "+arr[i]+" "+arr[j]+" "+arr[k]);
+						System.out.print("Triplets of sum is 15: "+arr[i]+" "+arr[j]+" "+arr[k]);
 						System.out.println();
 					}
 			
